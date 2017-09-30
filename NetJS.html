@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>NETSCAPE</title>
+		<script type="text/javascript">
+            function esconderOrigem(el){
+                var display = document.getElementById(el).style.display;    
+	            var btnEsconder = document.querySelector("#btnOrigem");
+                if(display == "none"){
+                    document.getElementById(el).style.display = 'block';
+                    btnOrigem.innerHTML = "Esconder"
+                }else{
+                    document.getElementById(el).style.display = 'none';
+                    btnOrigem.innerHTML = "Mostrar";
+                }  
+	       }
+           function esconderUsabilidade(el){
+                var display = document.getElementById(el).style.display;    
+	            var btnbtnUsabilidade = document.querySelector("#btnUsabilidade");
+                if(display == "none"){
+                    document.getElementById(el).style.display = 'block';
+                    btnUsabilidade.innerHTML = "Esconder"
+                }else{
+                    document.getElementById(el).style.display = 'none';
+                    btnUsabilidade.innerHTML = "Mostrar";
+                }  
+	       }    
+	</script>
+	<style>
+		article{
+		margin:20px;
+		border:2px solid gray;
+		width:800px;
+		height:450px;
+		}
+	body {
+	background: -webkit-linear-gradient(left, #93B874, #C9DCB9);
+	}
+	article section{
+	margin-left:20px;
+	}
+	article h1{
+	text-align:center;
+	}
+	footer{
+	font-size:12px;
+	text-align:right;
+	margin-right:10px;
+	color:blue;
+	}
+	section{
+	margin:20px;
+	background:#c2f8f9;
+	}
+	section b {
+	color:#a103c4;
+	}
+	</style>
+</head>
+    
+    <body>
+        <div align="center">
+            <article>
+                <h1>NETSCAPE</h1>
+                <section>
+                    <button id="btnOrigem" onclick="esconderOrigem('IdOrigem')">Esconder</button><br><br>
+                    <b>Origem</b><br>
+                    <span id="IdOrigem">
+                      Netscape Navigator é um navegador web proprietário que foi o principal produto da Netscape
+		              Communications Corporation. O navegador dominava em termos de quota de mercado, embora o seu uso tenha
+		              desaparecido até 2002. Isto deve-se principalmente ao aumento do número de usuários do software Internet
+		              Explorer, da Microsoft, e em parte porque a Netscape (posteriormente comprada pela AOL) não manteve a 
+		              inovação técnica Netscape Navigator após a década de 1990.
+                    </span>
+                </section>
+                <section>
+                    <button id="btnUsabilidade" onclick="esconderUsabilidade('IdUsabilidade')">Esconder</button><br><br>
+                    <b>Usabilidade,</b><br>
+                    <span id="IdUsabilidade">
+                        O Netscape Navigator posteriormente se tornou um componente da suíte de internet Netscape
+                        Communicator. O código-fonte do Netscape Communicator 4.x foi a base para o Mozilla Application Suite,
+                        que mais tarde foi renomeado para SeaMonkey. A suíte Mozilla da Netscape também serviu como base para 
+                        um navegador separado chamado Mozilla Firefox.
+                    </span>
+                </section>
+                <br><br>
+                <footer>
+                    fonte:<a href="https://pt.wikipedia.org/wiki/Netscape_Navigator" target="_blank">wikipedia</a>
+                </footer>
+            </article>
+        </div>
+    </body>    
+    
+</html>    
+    
